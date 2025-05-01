@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="BP" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Receptionist.Receptionist_menuController">
+   <left>
+      <VBox prefHeight="600.0" prefWidth="160.0" style="-fx-background-color: #2c9ca6;" BorderPane.alignment="CENTER">
+         <children>
+            <Button accessibleRole="TEXT" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="114.0" prefWidth="160.0" style="-fx-background-color: transparent;" textFill="WHITE" visible="false">
+               <font>
+                  <Font name="Arial Bold" size="19.0" />
+               </font>
+            </Button>
+            <Button fx:id="Home" mnemonicParsing="false" onMouseClicked="#Receptionist_menu" prefHeight="65.0" prefWidth="160.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 3px 0px 3px 0px;" text="Home" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="register_patient" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#reg_patient" prefHeight="66.0" prefWidth="160.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 3px 0px;" text="Register Patient" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="doctor_visit" layoutX="10.0" layoutY="76.0" mnemonicParsing="false" onMouseClicked="#doctor_visit" prefHeight="65.0" prefWidth="160.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 3px 0px;" text="Doctor Visit" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="lab_visit" layoutX="10.0" layoutY="141.0" mnemonicParsing="false" onMouseClicked="#lab_visit" prefHeight="65.0" prefWidth="160.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 3px 0px;" text="Lab Visit" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="admit_patient" layoutX="10.0" layoutY="207.0" mnemonicParsing="false" onMouseClicked="#admit_patient" prefHeight="65.0" prefWidth="160.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 3px 0px;" text="Admit Patient" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="discharge_patient" layoutX="10.0" layoutY="272.0" mnemonicParsing="false" onMouseClicked="#discharge_patient" prefHeight="66.0" prefWidth="160.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 3px 0px;" text="Discharge Patient" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="pay_dues" layoutX="10.0" layoutY="338.0" mnemonicParsing="false" onMouseClicked="#pay_dues" prefHeight="65.0" prefWidth="160.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 3px 0px;" text="Pay Dues" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+            </Button>
+            <ImageView disable="true" fitHeight="150.0" fitWidth="160.0" pickOnBounds="true" preserveRatio="true" />
+            <Button fx:id="LogOut" mnemonicParsing="false" onMouseClicked="#LogOut" prefHeight="65.0" prefWidth="160.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 3px 0px 0px 0px;" text="Log Out" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <AnchorPane fx:id="AP" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="900.0" prefWidth="740.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="184.0" layoutY="34.0" text="Receptionist Profile">
+               <font>
+                  <Font name="Arial Black" size="30.0" />
+               </font>
+            </Label>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffff00" height="506.0" layoutX="39.0" layoutY="105.0" stroke="#2c9ca6" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="2.0" width="670.0" />
+            <Label layoutX="67.0" layoutY="197.0" prefHeight="38.0" prefWidth="113.0" text="Username: ">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="username" editable="false" layoutX="196.0" layoutY="197.0" prefHeight="38.0" prefWidth="178.0" promptText="Enter" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 0px 0px 2px 0px;">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </TextField>
+            <Label layoutX="67.0" layoutY="243.0" prefHeight="38.0" prefWidth="113.0" text="Name:">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="name" editable="false" layoutX="196.0" layoutY="243.0" prefHeight="38.0" prefWidth="178.0" promptText="Enter" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 0px 0px 2px 0px;">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </TextField>
+            <Label layoutX="67.0" layoutY="281.0" prefHeight="38.0" prefWidth="113.0" text="Age:">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="age" editable="false" layoutX="196.0" layoutY="281.0" prefHeight="38.0" prefWidth="178.0" promptText="Enter" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 0px 0px 2px 0px;">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </TextField>
+            <Label layoutX="67.0" layoutY="323.0" prefHeight="38.0" prefWidth="113.0" text="Experience:">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="Experience" editable="false" layoutX="196.0" layoutY="323.0" prefHeight="38.0" prefWidth="178.0" promptText="Enter" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 0px 0px 2px 0px;">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </TextField>
+            <Label layoutX="67.0" layoutY="365.0" prefHeight="38.0" prefWidth="113.0" text="Phone No. :">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="Phone" editable="false" layoutX="196.0" layoutY="365.0" prefHeight="38.0" prefWidth="178.0" promptText="Enter" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 0px 0px 2px 0px;">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </TextField>
+            <Label fx:id="GenderLabel" layoutX="67.0" layoutY="415.0" prefHeight="38.0" prefWidth="113.0" text="Gender: ">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="Gender" editable="false" layoutX="196.0" layoutY="415.0" prefHeight="38.0" prefWidth="178.0" promptText="Enter" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 0px 0px 2px 0px;">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </TextField>
+            <Label layoutX="67.0" layoutY="465.0" prefHeight="38.0" prefWidth="113.0" text="Address:">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="Addr" editable="false" layoutX="196.0" layoutY="465.0" prefHeight="38.0" prefWidth="287.0" promptText="Enter" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 0px 0px 2px 0px;">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </TextField>
+            <Label alignment="CENTER" layoutX="67.0" layoutY="137.0" prefHeight="38.0" prefWidth="200.0" style="-fx-background-color: #2c9ca6;" text="Profile" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </Label>
+            <Rectangle fx:id="Image" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="159.0" layoutX="511.0" layoutY="171.0" stroke="#49535a" strokeType="INSIDE" width="173.0" />
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

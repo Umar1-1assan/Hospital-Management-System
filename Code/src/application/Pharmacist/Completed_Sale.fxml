@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="742.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Pharmacist.CompletedSaleController">
+   <children>
+      <Label layoutX="31.0" layoutY="22.0" text="Completed Sale">
+         <font>
+            <Font name="Arial Black" size="30.0" />
+         </font>
+      </Label>
+      <TableView fx:id="Completed_Sales" layoutX="31.0" layoutY="145.0" prefHeight="398.0" prefWidth="666.0">
+         <columns>
+            <TableColumn fx:id="saleNum_t" prefWidth="148.8000144958496" text="SaleNumber" />
+            <TableColumn fx:id="dateTime_t" minWidth="0.0" prefWidth="310.3999786376953" text="DateTime" />
+            <TableColumn fx:id="total_t" prefWidth="206.39996337890625" text="Total" />
+         </columns>
+      </TableView>
+      <Button fx:id="Get_Info_btn" layoutX="307.0" layoutY="576.0" mnemonicParsing="false" onMouseClicked="#Get_Info" prefHeight="38.0" prefWidth="114.0" style="-fx-background-color: #2CA089;" text="Get Info" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" layoutX="32.0" layoutY="106.0" prefHeight="38.0" prefWidth="222.0" style="-fx-background-color: #2CA089;" text="Sales" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="21.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

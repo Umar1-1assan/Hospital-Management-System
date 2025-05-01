@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="bp" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Pharmacist.Pharmacist_menuController">
+   <left>
+      <VBox fx:id="vb" prefHeight="700.0" prefWidth="158.0" style="-fx-background-color: #2CA089;" BorderPane.alignment="CENTER">
+         <children>
+            <Button disable="true" layoutX="10.0" layoutY="208.0" mnemonicParsing="false" prefHeight="174.0" prefWidth="158.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 0px 0px;" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="Home" mnemonicParsing="false" onMouseClicked="#Pharmacist_menu" prefHeight="65.0" prefWidth="160.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 3px 0px 3px 0px;" text="Home" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="Create_Sale" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#Create_Sale" prefHeight="65.0" prefWidth="160.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 3px 0px;" text="Create Sale" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="Completed_Sale" layoutX="10.0" layoutY="76.0" mnemonicParsing="false" onMouseClicked="#Completed_Sale" prefHeight="66.0" prefWidth="179.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 3px 0px;" text="Completed Sales" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="Add_Stock" layoutX="10.0" layoutY="141.0" mnemonicParsing="false" onMouseClicked="#Add_Stock" prefHeight="66.0" prefWidth="179.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 3px 0px;" text="Add Stock" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button disable="true" mnemonicParsing="false" prefHeight="199.0" prefWidth="158.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 0px 0px;" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="LogOut" mnemonicParsing="false" onMouseClicked="#LogOut" prefHeight="65.0" prefWidth="160.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 3px 0px 3px 0px;" text="Log Out" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <AnchorPane fx:id="ap" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="742.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="219.0" layoutY="30.0" text="Pharmacist Profile">
+               <font>
+                  <Font name="Arial Black" size="30.0" />
+               </font>
+            </Label>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" disable="true" fill="#ffffff00" height="530.0" layoutX="55.0" layoutY="101.0" stroke="#2ca089" strokeType="INSIDE" width="653.0" />
+            <Label layoutX="85.0" layoutY="221.0" prefHeight="38.0" prefWidth="113.0" text="Usename:" textFill="#49535a">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="ussername_f" editable="false" layoutX="214.0" layoutY="219.0" prefHeight="38.0" prefWidth="178.0" promptText="Enter" style="-fx-background-color: transparent; -fx-border-color: #49535a; -fx-border-width: 0px 0px 2px 0px; -fx-text-fill: #49535a;">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </TextField>
+            <Label layoutX="85.0" layoutY="258.0" prefHeight="38.0" prefWidth="113.0" text="Name:" textFill="#49535a">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="name_f" editable="false" layoutX="214.0" layoutY="258.0" prefHeight="38.0" prefWidth="178.0" promptText="Enter" style="-fx-background-color: transparent; -fx-border-color: #49535a; -fx-border-width: 0px 0px 2px 0px; -fx-text-fill: #49535a;">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </TextField>
+            <Label layoutX="85.0" layoutY="296.0" prefHeight="38.0" prefWidth="113.0" text="Age:" textFill="#49535a">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="age_f" editable="false" layoutX="214.0" layoutY="296.0" prefHeight="38.0" prefWidth="178.0" promptText="Enter" style="-fx-background-color: transparent; -fx-border-color: #49535a; -fx-border-width: 0px 0px 2px 0px; -fx-text-fill: #49535a;">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </TextField>
+            <Label layoutX="85.0" layoutY="334.0" prefHeight="38.0" prefWidth="113.0" text="Experience:" textFill="#49535a">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="Speciality_f" editable="false" layoutX="214.0" layoutY="334.0" prefHeight="38.0" prefWidth="178.0" promptText="Enter" style="-fx-background-color: transparent; -fx-border-color: #49535a; -fx-border-width: 0px 0px 2px 0px; -fx-text-fill: #49535a;">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </TextField>
+            <Label layoutX="85.0" layoutY="372.0" prefHeight="38.0" prefWidth="113.0" text="CNIC:" textFill="#49535a">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="cnic_f" editable="false" layoutX="214.0" layoutY="372.0" prefHeight="38.0" prefWidth="178.0" promptText="Enter" style="-fx-background-color: transparent; -fx-border-color: #49535a; -fx-border-width: 0px 0px 2px 0px; -fx-text-fill: #49535a;">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </TextField>
+            <Label layoutX="85.0" layoutY="411.0" prefHeight="38.0" prefWidth="113.0" text="Phone No. :" textFill="#49535a">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="Phone" editable="false" layoutX="214.0" layoutY="411.0" prefHeight="38.0" prefWidth="178.0" promptText="Enter" style="-fx-background-color: transparent; -fx-border-color: #49535a; -fx-border-width: 0px 0px 2px 0px; -fx-text-fill: #49535a;">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </TextField>
+            <Label layoutX="85.0" layoutY="449.0" prefHeight="38.0" prefWidth="113.0" text="Gender:" textFill="#49535a">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="gender_f" editable="false" layoutX="214.0" layoutY="449.0" prefHeight="38.0" prefWidth="178.0" promptText="Enter" style="-fx-background-color: transparent; -fx-border-color: #49535a; -fx-border-width: 0px 0px 2px 0px; -fx-text-fill: #49535a;">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </TextField>
+            <Rectangle fx:id="Image" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="159.0" layoutX="511.0" layoutY="171.0" stroke="#49535a" strokeType="INSIDE" width="173.0" />
+            <Label layoutX="85.0" layoutY="495.0" prefHeight="38.0" prefWidth="113.0" text="Address:" textFill="#49535a">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="addr_f" editable="false" layoutX="214.0" layoutY="495.0" prefHeight="38.0" prefWidth="286.0" promptText="Enter" style="-fx-background-color: transparent; -fx-border-color: #49535a; -fx-border-width: 0px 0px 2px 0px; -fx-text-fill: #49535a;">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </TextField>
+            <Label alignment="CENTER" layoutX="85.0" layoutY="138.0" prefHeight="38.0" prefWidth="200.0" style="-fx-background-color: #2CA089;" text="Profile" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

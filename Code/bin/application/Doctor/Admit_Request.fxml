@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="confirm_select" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="740.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Doctor.AdmitRequestController">
+   <children>
+      <Label layoutX="236.0" layoutY="33.0" text="Admit Request">
+         <font>
+            <Font name="Arial Black" size="30.0" />
+         </font>
+      </Label>
+      <Button fx:id="Gen_Admit_Req_btn" layoutX="269.0" layoutY="562.0" mnemonicParsing="false" onMouseClicked="#Gen_Admit_Req" prefHeight="44.0" prefWidth="201.0" style="-fx-background-color: #343A40;" text="Generate Request" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="19.0" />
+         </font>
+      </Button>
+      <Label layoutX="154.0" layoutY="137.0" prefHeight="38.0" prefWidth="104.0" text="Patient Name: " textFill="#343a40">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="patient_name" layoutX="258.0" layoutY="137.0" prefHeight="38.0" prefWidth="235.0" promptText="Enter" style="-fx-background-color: white; -fx-border-color: #343A40; -fx-border-width: 0px 0px 2px 0px;">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </TextField>
+      <Button fx:id="search_patient" layoutX="519.0" layoutY="143.0" mnemonicParsing="false" onMouseClicked="#search_Patient" style="-fx-background-color: #343A40;" text="Search" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Button>
+      <TableView fx:id="table_doc" layoutX="90.0" layoutY="241.0" prefHeight="298.0" prefWidth="588.0">
+         <columns>
+            <TableColumn fx:id="name" prefWidth="153.5999984741211" text="Name" />
+            <TableColumn fx:id="cnic" minWidth="0.0" prefWidth="165.5999755859375" text="CNIC" />
+            <TableColumn fx:id="gender" prefWidth="106.4000244140625" text="Gender" />
+            <TableColumn fx:id="age" prefWidth="52.000030517578125" text="Age" />
+            <TableColumn fx:id="bloodGroup" prefWidth="115.20001220703125" text="BloodGroup" />
+         </columns>
+      </TableView>
+      <Label alignment="CENTER" layoutX="90.0" layoutY="202.0" prefHeight="38.0" prefWidth="200.0" style="-fx-background-color: #343A40;" text="Patients" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

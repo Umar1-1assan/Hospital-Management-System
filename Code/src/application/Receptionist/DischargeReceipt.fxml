@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="paid" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="740.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Receptionist.DischargeRecptController">
+   <children>
+      <Button fx:id="print_btn" layoutX="288.0" layoutY="578.0" mnemonicParsing="false" onMouseClicked="#print" prefHeight="44.0" prefWidth="164.0" style="-fx-background-color: black;" text="Print" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="19.0" />
+         </font>
+      </Button>
+      <Label layoutX="75.0" layoutY="276.0" prefHeight="38.0" prefWidth="129.0" text="Patient Name:" textFill="#0d0d0d">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="pName_f" editable="false" layoutX="214.0" layoutY="276.0" prefHeight="38.0" prefWidth="179.0" promptText="Enter" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 0px 0px 2px 0px;">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="75.0" layoutY="342.0" prefHeight="38.0" prefWidth="129.0" text="CNIC:">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="cnic_f" editable="false" layoutX="214.0" layoutY="341.0" prefHeight="38.0" prefWidth="179.0" promptText="Enter" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 0px 0px 2px 0px;">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="75.0" layoutY="410.0" prefHeight="38.0" prefWidth="129.0" text="Bed Assigned:">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="bed_f" editable="false" layoutX="214.0" layoutY="410.0" prefHeight="38.0" prefWidth="179.0" promptText="Enter" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 0px 0px 2px 0px;">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </TextField>
+      <Label alignment="CENTER" layoutX="73.0" layoutY="214.0" prefHeight="38.0" prefWidth="200.0" style="-fx-background-color: black;" text="Discharge Slip" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="77.0" layoutY="53.0" prefHeight="52.0" prefWidth="289.0" text="Islamabad Hospital">
+         <font>
+            <Font name="Calibri" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="77.0" layoutY="113.0" prefHeight="52.0" prefWidth="289.0" text="H-11 Police Line Metro Station">
+         <font>
+            <Font name="Calibri" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="77.0" layoutY="139.0" prefHeight="52.0" prefWidth="289.0" text="+92 339 1930854">
+         <font>
+            <Font name="Calibri" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="75.0" layoutY="476.0" prefHeight="38.0" prefWidth="129.0" text="Discharge Date:">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="dateTime_f" editable="false" layoutX="214.0" layoutY="476.0" prefHeight="38.0" prefWidth="179.0" promptText="Enter" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 0px 0px 2px 0px;">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>

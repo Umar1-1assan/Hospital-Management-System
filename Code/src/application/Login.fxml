@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="900.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LoginController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" disable="true" fill="#1b263b" height="710.0" layoutX="-6.0" layoutY="-6.0" stroke="WHITE" strokeLineCap="ROUND" strokeType="OUTSIDE" width="390.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" disable="true" fill="WHITE" height="492.0" layoutX="67.0" layoutY="89.0" stroke="BLACK" strokeLineCap="ROUND" strokeType="OUTSIDE" width="779.0">
+         <effect>
+            <Shadow height="77.15" radius="33.395" width="58.43" />
+         </effect>
+      </Rectangle>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" disable="true" fill="WHITE" height="492.0" layoutX="67.0" layoutY="89.0" stroke="#000000fb" strokeLineCap="ROUND" strokeType="OUTSIDE" width="779.0" />
+      <Label alignment="CENTER" layoutX="537.0" layoutY="158.0" prefHeight="99.0" prefWidth="186.0" text="Login" textAlignment="CENTER">
+         <font>
+            <Font name="Verdana" size="36.0" />
+         </font>
+      </Label>
+      <TextField fx:id="usernameField" layoutX="492.0" layoutY="257.0" prefHeight="43.0" prefWidth="287.0" promptText="Enter username" style="-fx-border-width: 0px 0px 1px 0px; -fx-border-color: black; -fx-background-color: white;">
+         <font>
+            <Font name="Verdana" size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </TextField>
+      <Button fx:id="loginButton" layoutX="493.0" layoutY="383.0" mnemonicParsing="false" onMouseClicked="#handleLoginButtonAction" prefHeight="20.0" prefWidth="287.0" style="-fx-background-color: #1B263B;" text="Log In" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Verdana" size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </Button>
+      <PasswordField fx:id="passwordField" layoutX="492.0" layoutY="310.0" prefHeight="43.0" prefWidth="287.0" promptText="Enter password" style="-fx-background-color: white; -fx-border-color: black; -fx-border-width: 0px 0px 1px 0px;">
+         <font>
+            <Font name="Arial" size="17.0" />
+         </font>
+      </PasswordField>
+      <ImageView fitHeight="31.0" fitWidth="29.0" layoutX="456.0" layoutY="264.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/8723073_user_icon.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="29.0" fitWidth="29.0" layoutX="456.0" layoutY="317.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/4213432_closed_lock_password_protect_secure_icon.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="492.0" layoutX="67.0" layoutY="89.0" stroke="#4d5f7b" strokeType="INSIDE" width="318.0" />
+      <ImageView disable="true" fitHeight="449.0" fitWidth="550.0" layoutX="12.0" layoutY="107.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/logo-removebg-preview.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

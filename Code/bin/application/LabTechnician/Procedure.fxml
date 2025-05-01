@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="740.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LabTechnician.ProcedureController">
+   <children>
+      <Button fx:id="save_btn" layoutX="469.0" layoutY="588.0" mnemonicParsing="false" onMouseClicked="#save" prefHeight="44.0" prefWidth="167.0" style="-fx-background-color: #1B263B;" text="Save" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="19.0" />
+         </font>
+      </Button>
+      <Label layoutX="281.0" layoutY="31.0" text="Lab Report">
+         <font>
+            <Font name="Arial Black" size="30.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="70.0" layoutY="260.0" prefHeight="38.0" prefWidth="200.0" style="-fx-background-color: #1B263B;" text="Report" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="70.0" layoutY="143.0" prefHeight="38.0" prefWidth="94.0" text="CNIC:" textFill="#1b263b">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="f_patient_id" editable="false" layoutX="164.0" layoutY="143.0" prefHeight="38.0" prefWidth="178.0" promptText="Enter" style="-fx-background-color: transparent; -fx-border-color: #1B263B; -fx-border-width: 0px 0px 2px 0px;">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </TextField>
+      <TextArea fx:id="Report_area" layoutX="70.0" layoutY="299.0" prefHeight="247.0" prefWidth="573.0" />
+      <Label layoutX="70.0" layoutY="98.0" prefHeight="38.0" prefWidth="94.0" text="Name:" textFill="#1b263b">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="f_patient_name" editable="false" layoutX="164.0" layoutY="98.0" prefHeight="38.0" prefWidth="178.0" promptText="Enter" style="-fx-background-color: transparent; -fx-border-color: #1B263B; -fx-border-width: 0px 0px 2px 0px;">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="70.0" layoutY="184.0" prefHeight="38.0" prefWidth="94.0" text="Age:" textFill="#1b263b">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="f_patient_Age" editable="false" layoutX="164.0" layoutY="184.0" prefHeight="38.0" prefWidth="178.0" promptText="Enter" style="-fx-background-color: transparent; -fx-border-color: #1B263B; -fx-border-width: 0px 0px 2px 0px;">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="370.0" layoutY="98.0" prefHeight="38.0" prefWidth="94.0" text="SampleNo:" textFill="#1b263b">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="f_sample_no" editable="false" layoutX="464.0" layoutY="98.0" prefHeight="38.0" prefWidth="178.0" promptText="Enter" style="-fx-background-color: transparent; -fx-border-color: #1B263B; -fx-border-width: 0px 0px 2px 0px;">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="370.0" layoutY="184.0" prefHeight="38.0" prefWidth="94.0" text="Lab Test:" textFill="#1b263b">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="f_labTest" editable="false" layoutX="464.0" layoutY="184.0" prefHeight="38.0" prefWidth="178.0" promptText="Enter" style="-fx-background-color: transparent; -fx-border-color: #1B263B; -fx-border-width: 0px 0px 2px 0px;">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="370.0" layoutY="143.0" prefHeight="38.0" prefWidth="94.0" text="DateTime:" textFill="#1b263b">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="f_dateTime" editable="false" layoutX="464.0" layoutY="143.0" prefHeight="38.0" prefWidth="178.0" promptText="Enter" style="-fx-background-color: transparent; -fx-border-color: #1B263B; -fx-border-width: 0px 0px 2px 0px;">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </TextField>
+      <Button fx:id="print_btn" layoutX="86.0" layoutY="588.0" mnemonicParsing="false" onMouseClicked="#print" prefHeight="44.0" prefWidth="167.0" style="-fx-background-color: #1B263B;" text="Print" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="19.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

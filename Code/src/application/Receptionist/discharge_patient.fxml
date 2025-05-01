@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="740.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Receptionist.DischargePatientController">
+   <children>
+      <Button fx:id="Discharge" layoutX="278.0" layoutY="584.0" mnemonicParsing="false" onMouseClicked="#Discharge_fnc" prefHeight="44.0" prefWidth="167.0" style="-fx-background-color: #2c9ca6;" text="Discharge" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="19.0" />
+         </font>
+      </Button>
+      <Label layoutX="224.0" layoutY="29.0" text="Discharge Patient">
+         <font>
+            <Font name="Arial Black" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="118.0" layoutY="115.0" prefHeight="38.0" prefWidth="94.0" text="Patient Name:" textFill="#2c9ca6">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="f_patient_id" layoutX="233.0" layoutY="115.0" prefHeight="38.0" prefWidth="226.0" promptText="Enter" style="-fx-background-color: white; -fx-border-color: #2c9ca6; -fx-border-width: 0px 0px 2px 0px;">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </TextField>
+      <Button fx:id="search_patient" layoutX="483.0" layoutY="121.0" mnemonicParsing="false" onMouseClicked="#search_patient" style="-fx-background-color: grey;" text="Search" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Button>
+      <TableView fx:id="discharge_reqs_table" layoutX="49.0" layoutY="209.0" prefHeight="346.0" prefWidth="644.0">
+        <columns>
+          <TableColumn fx:id="reqNo_t" prefWidth="80.80001831054688" text="Req No." />
+          <TableColumn fx:id="patName_t" prefWidth="175.199951171875" text="Patient Name" />
+            <TableColumn fx:id="cnic_t" prefWidth="150.39996337890625" text="NIC" />
+            <TableColumn fx:id="dateTime_t" prefWidth="120.80001831054688" text="DateTime" />
+            <TableColumn fx:id="bedAllocNo_t" prefWidth="114.39996337890625" text="BedAllocNo." />
+        </columns>
+      </TableView>
+      <Label alignment="CENTER" layoutX="49.0" layoutY="170.0" prefHeight="38.0" prefWidth="200.0" style="-fx-background-color: #2c9ca6;" text="Requests" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="730.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Doctor.ShowVisitController">
+   <children>
+      <Label layoutX="350.0" layoutY="40.0" text="Visit">
+         <font>
+            <Font name="Arial Black" size="30.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="back" fitHeight="52.0" fitWidth="52.0" layoutX="23.0" layoutY="32.0" onMouseClicked="#go_back" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/icons8-back-50.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="59.0" layoutY="107.0" prefHeight="38.0" prefWidth="104.0" text="Patient: " textFill="#343a40">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="patient_name_f" editable="false" layoutX="163.0" layoutY="107.0" prefHeight="38.0" prefWidth="171.0" promptText="Enter" style="-fx-background-color: transparent; -fx-border-color: #343A40; -fx-border-width: 0px 0px 2px 0px;">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="59.0" layoutY="149.0" prefHeight="38.0" prefWidth="104.0" text="Age:" textFill="#343a40">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="age_f" editable="false" layoutX="163.0" layoutY="151.0" prefHeight="38.0" prefWidth="171.0" promptText="Enter" style="-fx-background-color: transparent; -fx-border-color: #343A40; -fx-border-width: 0px 0px 2px 0px;">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </TextField>
+      <TextArea fx:id="Prescription_f" layoutX="163.0" layoutY="327.0" prefHeight="254.0" prefWidth="490.0" />
+      <Label layoutX="59.0" layoutY="327.0" prefHeight="38.0" prefWidth="104.0" text="Prescription:" textFill="#343a40">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="385.0" layoutY="195.0" prefHeight="38.0" prefWidth="104.0" text="Medical Issue:" textFill="#343a40">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="medical_Issue_f" editable="false" layoutX="495.0" layoutY="195.0" prefHeight="38.0" prefWidth="171.0" promptText="Enter" style="-fx-background-color: transparent; -fx-border-color: #343A40; -fx-border-width: 0px 0px 2px 0px;">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="394.0" layoutY="107.0" prefHeight="38.0" prefWidth="104.0" text="Doctor:" textFill="#343a40">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="doctor_name_f" editable="false" layoutX="495.0" layoutY="107.0" prefHeight="38.0" prefWidth="171.0" promptText="Enter" style="-fx-background-color: transparent; -fx-border-color: #343A40; -fx-border-width: 0px 0px 2px 0px;">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="394.0" layoutY="151.0" prefHeight="38.0" prefWidth="104.0" text="DateTime:" textFill="#343a40">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="dateTime_f" editable="false" layoutX="495.0" layoutY="151.0" prefHeight="38.0" prefWidth="171.0" promptText="Enter" style="-fx-background-color: transparent; -fx-border-color: #343A40; -fx-border-width: 0px 0px 2px 0px;">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="59.0" layoutY="190.0" prefHeight="38.0" prefWidth="104.0" text="CNIC:" textFill="#343a40">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="cnic_f" editable="false" layoutX="161.0" layoutY="190.0" prefHeight="38.0" prefWidth="171.0" promptText="Enter" style="-fx-background-color: transparent; -fx-border-color: #343A40; -fx-border-width: 0px 0px 2px 0px;">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>
